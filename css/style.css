@@ -4,6 +4,10 @@ body {
     font-family: arial, sans-serif
 }
 
+footer a {
+    color: yellow;
+}
+
 header, main, footer {
     max-width: 800px;
     margin: 0 auto;
@@ -11,7 +15,7 @@ header, main, footer {
 
 header, footer {
     padding: 1.5em 4em;
-    background-color: #9944ff;
+    background-color: #8833ff;
     border-radius: 20px;
 }
 
