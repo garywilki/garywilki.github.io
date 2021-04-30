@@ -14,14 +14,15 @@ header, main, footer {
 }
 
 header, footer {
+    text-align: center;
+    border-radius: 0px;
     padding: 1.5em 4em;
     background-color: #8833ff;
-    border-radius: 20px;
 }
 
 header h1 {
-    font-size: 4em;
-    font-family: century, serif;
+    font-size: 2.5em;
+    font-family: 'Sriracha', cursive;
     margin: 0px 50px;
     color:#fff;
 }
@@ -38,15 +39,13 @@ main {
 }
 
 main h2 {
+    font-size: 1.2em;
     margin: 20px 0 0 0;
 }
 
-header img {
-    float: right;
+header img {border-radius: 10px;
     width: 150px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #777;
 }
 
 li {
