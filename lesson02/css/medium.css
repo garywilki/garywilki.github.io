@@ -7,6 +7,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    section {
+        margin: 10px;
+    }
+
     header, footer {
         border-radius: 20px;
     }

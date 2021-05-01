@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     background-color: #ccd;
-    font-family: arial, sans-serif
+    font-family: Lato, arial, sans-serif
 }
 
 header, main, footer {
@@ -15,20 +15,26 @@ header, footer {
     padding: 1.5em 4em;
     background-color: #8833ff;
     max-width: 100%;
+    color:#fff;
 }
 
 header h1 {
     font-size: 2.5em;
     font-family: 'Sriracha', cursive;
     margin: 0px 0px 20px 0px;
-    color:#fff;
 }
 
 header h2 {
     font-size: 2em;
-    font-family: arial, sans-serif;
     margin: 0px 0px;
-    color:#fff;
+}
+
+footer {
+    font-size: 1em;
+}
+
+footer a {
+    color: yellow;
 }
 
 main {
@@ -43,7 +49,7 @@ section {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 10px 0px;
     padding: 10px;
     background-color:lightgray;
     text-align:left;
@@ -84,14 +90,4 @@ section .description {
     color: black;
     font-size: 1.2em;
     padding: 5px;
-}
-
-footer {
-    font-size: 1em;
-    text-align: center;
-    color: #fff;
-}
-
-footer a {
-    color: yellow;
 }
