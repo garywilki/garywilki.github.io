@@ -39,7 +39,7 @@ footer a {
 
 main {
     background-color: white;
-    padding: 1em;
+    padding: 1em 0em;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
