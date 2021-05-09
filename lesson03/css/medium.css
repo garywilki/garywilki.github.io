@@ -1,0 +1,30 @@
+@media only screen and (min-width: 37.5em) {
+    header, main, footer {
+        max-width: 900px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+	
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    header {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    header, footer {
+        border-radius: 20px;
+    }
+}
