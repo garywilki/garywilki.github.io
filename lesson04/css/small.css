@@ -42,13 +42,17 @@ header picture {
 }
 
 header h1 {
-    font-size: 2.5rem; /* 40px */
+    font-size: 1.8rem; /* 40px */
     font-family: 'Sriracha', cursive;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 20px;
+}
+
+header img {
+    width: 60px;
 }
 
 .motto {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.2rem; /* 19px */
 }
 
 nav {
@@ -110,25 +114,15 @@ main {
     justify-items: center;*/
 }
 
-.span {
-    grid-column: 1 / -1;
-    max-width: 1000px;
-}
-
-.span img {
-    width: auto;
-    padding-top: 1em;
-}
-
 .container {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 5px;
     background-color:lightgray;
     text-align:left;
-    max-width: 400px;
+    max-width: 600px;
     width: 90%;
 }
 

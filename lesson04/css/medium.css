@@ -3,22 +3,9 @@
         max-width: 900px;
     }
 
-    .navigation {
-		display: flex;
-	}
-    
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-
-	.navigation a {
-		text-align: center;
-	}
-
-	.navigation li:first-child {
-		display: none;
-	}
+    nav {
+        padding: 0 1rem;
+    }
 
     main {
         grid-template-columns: 1fr 1fr;
@@ -31,5 +18,17 @@
 
     footer {
         border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 2.0rem; /* 32px */
+    }
+
+    .motto {
+        font-size: 1.4rem; /* 22px */
+    }
+
+    header img {
+        width: 90px;
     }
 }
