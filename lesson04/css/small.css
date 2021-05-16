@@ -94,7 +94,7 @@ nav ul {
 	color: #36454f;
 }
 
-.active {
+.navigation .active {
 	color: yellow;
 }
 
@@ -112,6 +112,10 @@ main {
     /*display: grid;
     grid-template-columns: 1fr;
     justify-items: center;*/
+}
+
+main h2 {
+    text-align: center;
 }
 
 .container {
