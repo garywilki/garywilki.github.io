@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakersfield Weather</title>
+    <meta
+      name="description"
+      content="Design Principles Demonstration - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="images/windsock.png" alt="Wind Sock Logo" />
+      </picture>
+      <section class="headings">
+        <h1>Bakersfield Weather</h1>
+        <div class="motto">
+          For when it's hot<br />
+          and when it's not
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston</h2>
+      <section class="container">
+        <p class="content">Hero w/ weather summary</p>
+      </section>
+      <section class="container">
+        <p class="content">5 Day Forecast</p>
+      </section>
+      <section class="container">
+        <p class="content">Article</p>
+      </section>
+      <section class="container">
+        <p class="content">Contact Information</p>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeWeather Inc. | Gary Wilkins |
+      California |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
