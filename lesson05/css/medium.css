@@ -31,4 +31,19 @@
     header img {
         width: 90px;
     }
+
+    .forecast {
+        display: block;
+    }
+
+    .contact img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+    }
+
+    .contact ul {
+        grid-column: 2 / 3;
+    }
 }
