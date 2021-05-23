@@ -17,8 +17,11 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/banner.js"></script>
   </head>
   <body>
+    <aside id="banner">🥞 Preston Pancakes in the Park!  9:00am Saturday at the city park. 🥞</aside>
     <header>
       <picture>
         <img src="images/windsock.png" alt="Wind Sock Logo" />
@@ -44,17 +47,46 @@
     </nav>
     <main>
       <h2>Preston</h2>
-      <section class="container">
-        <p class="content">Hero w/ weather summary</p>
+      <section class="hero">
+        <img src="images/herobanner.jpg" alt="Town near water">
+        <div class="weather-summary">
+          <h3 class="weather-summary-heading">Weather Summary</h3>
+          <div class="weather-summary-category">Currently:</div>
+          <div class="weather-summary-value">76 F</div>
+          <div class="weather-summary-category">Currently:</div>
+          <div class="weather-summary-value">76 F</div>
+          <div class="weather-summary-category">Currently:</div>
+          <div class="weather-summary-value">76 F</div>
+          <div class="weather-summary-category">Currently:</div>
+          <div class="weather-summary-value">76 F</div>
+          <div class="weather-summary-category">Currently:</div>
+          <div class="weather-summary-value">76 F</div>
+        </div>
+        <br />Photo by Adrien Olichon from Pexels
       </section>
-      <section class="container">
-        <p class="content">5 Day Forecast</p>
+      <section class="forecast">
+        <ul>
+          <li><div class="forecast-header">Sunday</div>🌞<br/><span class="forecast-sunday">89 F</span></li>
+          <li><div class="forecast-header">Monday</div>🌞<br/><span class="forecast-sunday">89 F</span></li>
+          <li><div class="forecast-header">Tuesday</div>🌞<br/><span class="forecast-sunday">89 F</span></li>
+          <li><div class="forecast-header">Wednesday</div>🌞<br/><span class="forecast-sunday">89 F</span></li>
+          <li><div class="forecast-header">Thursday</div>🌞<br/><span class="forecast-sunday">89 F</span></li>
+        </ul>
       </section>
-      <section class="container">
-        <p class="content">Article</p>
-      </section>
-      <section class="container">
-        <p class="content">Contact Information</p>
+      <article class="container">
+        <h3>Founders Day Fresco</h3>
+        <p>by Jennifer Gonzalez</p>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore officiis et explicabo perspiciatis voluptates, cupiditate eum ab, ipsa itaque ullam animi laboriosam neque maxime recusandae mollitia dolor, nemo nihil!</p>
+      </article>
+      <section class="contact">
+        <img src="images/prestonmap.png" alt="Map of Preston">
+        <ul>
+          <li>BakeWeather</li>
+          <li>30 N 1st E</li>
+          <li>Preston, ID 83263<br/><br/></li>
+          <li>📞999-999-9999</li>
+          <li>📬bakeweather@bakersfield.com</li>
+        </ul>
       </section>
     </main>
     <footer>
@@ -63,6 +95,5 @@
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>
       <p>Last Updated: <span id="lastmodified"></span></p>
     </footer>
-    <script src="js/index.js"></script>
   </body>
 </html>

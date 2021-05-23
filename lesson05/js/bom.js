@@ -18,11 +18,19 @@ button.addEventListener("click", () => {
 
         list.appendChild(newItem);
 
-        deleteButton.addEventListener("click", () => {
-            list.removeChild(newItem);
-        });
+        deleteButton.addEventListener("click",
+            () => {
+                list.removeChild(newItem);
+                console.log("DELETE 1");
+            }
+        );
 
         input.value = "";
         input.focus();
     }
 });
+
+function test(newItemasdf) {
+    list.removeChild(newItemasdf);
+    console.log("DELETE 3");
+}
