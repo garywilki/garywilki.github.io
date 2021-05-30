@@ -1,0 +1,49 @@
+@media only screen and (min-width: 37.5em) {
+    main, footer {
+        max-width: 900px;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    footer {
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 2.0rem; /* 32px */
+    }
+
+    .motto {
+        font-size: 1.4rem; /* 22px */
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .contact-map {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+    }
+
+    .contact ul {
+        grid-column: 2 / 3;
+    }
+}
