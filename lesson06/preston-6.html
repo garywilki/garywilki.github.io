@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/index.js"></script>
     <script defer src="js/banner.js"></script>
+    <script defer src="js/weather.js"></script>
   </head>
   <body>
     <aside id="banner">
@@ -50,19 +51,25 @@
     <main>
       <h2>Preston</h2>
       <section class="hero">
-        <img src="images/herobanner.jpg" alt="Town near water" />
+        <img  srcset="images/wdd230_image_franklinOriginal580.jpg 580w,
+                      images/wdd230_image_franklinOriginal660.jpg 660w,
+                      images/wdd230_image_franklinOriginal750.jpg 750w"
+              sizes=" (max-width: 599px) 580px,
+                      (max-width: 959px) 660px,
+                      750px"
+              src="images/wdd230_image_franklinOriginal750.jpg" alt="Town near water" />
         <div class="weather-summary">
           <h3 class="weather-summary-heading">Weather Summary</h3>
-          <div class="weather-summary-category">Currently:</div>
-          <div class="weather-summary-value">76 F</div>
-          <div class="weather-summary-category">Currently:</div>
-          <div class="weather-summary-value">76 F</div>
-          <div class="weather-summary-category">Currently:</div>
-          <div class="weather-summary-value">76 F</div>
-          <div class="weather-summary-category">Currently:</div>
-          <div class="weather-summary-value">76 F</div>
-          <div class="weather-summary-category">Currently:</div>
-          <div class="weather-summary-value">76 F</div>
+          <div class="category-weather">Currently:</div>
+          <div class="value-weather"><span id="weather-currently">Rainy</span></div>
+          <div class="category-high">High:</div>
+          <div class="value-high"><span id="weather-high">50</span> F</div>
+          <div class="category-windchill">Wind Chill:</div>
+          <div class="value-windchill"><span id="weather-windchill"></span></div>
+          <div class="category-humidity">Humidity:</div>
+          <div class="value-humidity"><span id="weather-humidity">95</span>%</div>
+          <div class="category-windspeed">Wind Speed:</div>
+          <div class="value-windspeed"><span id="weather-windspeed">12</span> mph</div>
         </div>
         <br />Photo by Adrien Olichon from Pexels
       </section>
@@ -134,5 +141,13 @@
       <a href="https://www.byui.edu/online">BYUI Online Learning</a>
       <p>Last Updated: <span id="lastmodified"></span></p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Lato','Sriracha']
+        }
+      });
+    </script>
   </body>
 </html>
