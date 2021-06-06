@@ -47,8 +47,8 @@ let lastVisited = parseInt(localStorage.getItem('lastvisited'));
 let days = (currentTime - lastVisited) / DAYS_TO_MS;
 
 // Display to the console how many days since last page visit
-let visitMessage = "You last visited " + days.toFixed(8) + " days ago.";
-console.log(visitMessage);
+let visitMessage = "You last visited " + days.toFixed(0) + " days ago.";
+let visitElement = document.querySelector(".lastvisited").innerHTML = visitMessage;
 
 // Store current time in storage to be used the next time we refresh page
 localStorage.setItem('lastvisited', currentTime);

@@ -37,4 +37,13 @@
     header img {
         width: 120px;
     }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* hover effect */
+    .image-grid figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

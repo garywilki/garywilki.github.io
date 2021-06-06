@@ -46,4 +46,8 @@
     .contact ul {
         grid-column: 2 / 3;
     }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
