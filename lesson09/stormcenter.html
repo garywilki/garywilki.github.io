@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Bakersfield Weather</title>
+    <meta
+      name="description"
+      content="Weather Site Project - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/banner.js"></script>
+  </head>
+  <body>
+    <aside id="banner">
+      🥞 Preston Pancakes in the Park! 9:00am Saturday at the city park. 🥞
+    </aside>
+    <header>
+      <picture>
+        <img src="images/windsock.png" alt="Wind Sock Logo" />
+      </picture>
+      <section class="headings">
+        <h1>Bakersfield Weather</h1>
+        <div class="motto">
+          For when it's hot<br />
+          and when it's not
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5,}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Weather Event</legend>
+                <label class="top">Storm Date <input type="date" name="stormdate"></label>
+                <label>Storm Type:
+                    <input name="stormtype" list="stormtypelist"></label>
+                <datalist id="stormtypelist">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label class="flexly" for="rating">Storm Severity (10 is max): &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+        
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <label>
+                    <select name="stormregion" id="selectStormRegion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div>Do you think you're in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+                <label>
+                    <textarea>
+
+                    </textarea>
+                </label>
+                
+            </fieldset>
+    
+            <input type="submit" value="Propose My Course" class="submitBtn">
+        </form>
+
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeWeather | Gary Wilkins | California
+      |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+      <p class="lastvisited"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Sriracha"],
+        },
+      });
+    </script>
+  </body>
+</html>
