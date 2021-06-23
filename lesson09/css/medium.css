@@ -13,7 +13,7 @@
     }
 
     section {
-        margin: 10px;
+        margin: 0px;
     }
 
     footer {
@@ -49,5 +49,42 @@
 
     .image-grid {
         grid-template-columns: 1fr 1fr;
+    }
+    
+    .towncards section {
+        background-color: lavenderblush;
+        color: blue;
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .towncards section:nth-child(even) img {
+        grid-column: 1;
+    }
+
+    .towncards section:nth-child(even) article {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .towncards section h2 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .towncards img {
+        max-width: 100%;
+    }
+    
+    .towncardmotto {
+        font-style:italic;
+        font-weight:bold;
+        margin: 0;
+        color: green;
+        font-size: 1rem;
     }
 }

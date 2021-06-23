@@ -46,4 +46,44 @@
     .image-grid figure:hover {
         box-shadow: 0 0 50px #333;
     }
+
+    .towncards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .towncards section {
+        background-color: lavenderblush;
+        color: blue;
+        padding: 10px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .towncards section:nth-child(even) img {
+        grid-column: 1;
+    }
+
+    .towncards section:nth-child(even) article {
+        grid-column: 1;
+    }
+    
+    .towncards section h2 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .towncards img {
+        max-width: 100%;
+    }
+    
+    .towncardmotto {
+        font-style:italic;
+        font-weight:bold;
+        margin: 0;
+        color: green;
+        font-size: 1rem;
+    }
 }

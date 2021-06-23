@@ -10,6 +10,9 @@ fetch(requestURL)
     for (let town of towns) {
         if (town.name == "Soda Springs" || town.name == "Fish Haven" || town.name == "Preston") {
             let card = document.createElement('section');
+
+            let cardArticle = document.createElement('article');
+
             let name = document.createElement('h2');
             let motto = document.createElement('p');
             let founded = document.createElement('p');
@@ -39,12 +42,14 @@ fetch(requestURL)
             }
             photo.setAttribute('alt', town.name);
 
+            
+            cardArticle.appendChild(name);
+            cardArticle.appendChild(motto);
+            cardArticle.appendChild(founded);
+            cardArticle.appendChild(population);
+            cardArticle.appendChild(averageRainfall);
 
-            card.appendChild(name);
-            card.appendChild(motto);
-            card.appendChild(founded);
-            card.appendChild(population);
-            card.appendChild(averageRainfall);
+            card.appendChild(cardArticle);
             card.appendChild(photo);
             
 
