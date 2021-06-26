@@ -28,18 +28,8 @@ fetch(requestURL)
             founded.textContent = "Year Founded: " + town.yearFounded;
             population.textContent = "Population: " + town.currentPopulation;
             averageRainfall.textContent = "Annual Rain Fall: " + town.averageRainfall;
-            
-            switch(town.name) {
-                case "Soda Springs":
-                    photo.setAttribute('src', "./images/sodasprings.jpg");
-                    break;
-                case "Fish Haven":
-                    photo.setAttribute('src', "./images/fishhaven.jpg");
-                    break;
-                case "Preston":
-                    photo.setAttribute('src', "./images/preston.jpg");
-                    break;
-            }
+
+            photo.setAttribute('src', "images/" + town.photo);
             photo.setAttribute('alt', town.name);
 
             

@@ -1,0 +1,89 @@
+@media only screen and (min-width: 60em) {
+    header, main, footer, nav {
+        max-width: 1100px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .navigation {
+		display: flex;
+        max-width: 1000px;
+        margin: auto;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .container {
+        max-width: 70%
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    .motto {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* hover effect */
+    .image-grid figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .towncards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .towncards section {
+        background-color: lavenderblush;
+        color: blue;
+        padding: 10px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .towncards section:nth-child(even) img {
+        grid-column: 1;
+    }
+
+    .towncards section:nth-child(even) article {
+        grid-column: 1;
+    }
+    
+    .towncards section h2 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .towncards img {
+        max-width: 100%;
+    }
+    
+    .towncardmotto {
+        font-style:italic;
+        font-weight:bold;
+        margin: 0;
+        color: green;
+        font-size: 1rem;
+    }
+}

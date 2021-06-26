@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Bakersfield Weather</title>
+    <meta
+      name="description"
+      content="Weather Site Project - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/banner.js"></script>
+  </head>
+  <body>
+    <aside id="banner">
+      🥞 Preston Pancakes in the Park! 9:00am Saturday at the city park. 🥞
+    </aside>
+    <header>
+      <picture>
+        <img src="images/windsock.png" alt="Wind Sock Logo" />
+      </picture>
+      <section class="headings">
+        <h1>Bakersfield Weather</h1>
+        <div class="motto">
+          For when it's hot<br />
+          and when it's not
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston-10.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-10.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Weather Gallery</h2>
+      <section class="image-grid">
+        <figure>
+          <img src="images/herobanner.jpg" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/herobanner.jpg" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/herobanner.jpg" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/herobanner.jpg" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/herobanner.jpg" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/prestonmap.png" alt="" loading="lazy"/>
+          <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeWeather | Gary Wilkins | California
+      |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+      <p class="lastvisited"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Sriracha"],
+        },
+      });
+    </script>
+  </body>
+</html>
