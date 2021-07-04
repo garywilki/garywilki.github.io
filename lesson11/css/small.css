@@ -288,3 +288,30 @@ aside {
     color: green;
     font-size: 1rem;
 }
+
+.townpage {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+
+}
+
+.townpage article {
+    background-color: lavenderblush;
+    color: blue;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid pink;
+    border-radius: 30px;
+}
+
+.townpage article h2 {
+    margin: 0;
+    font-family: Sriracha;
+    font-size: 2.5rem;
+    padding: 0;
+}

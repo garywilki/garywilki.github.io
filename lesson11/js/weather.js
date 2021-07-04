@@ -23,69 +23,73 @@ const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + 
 let cityName = ["preston","sodasprings","fishhaven"];
 let cityID = [PRESTONID,SODASPRINGSID,FISHHAVENID];
 
-for (let i = 0; i < cityID.length; i++) {
+let i = 0;
 
-    let apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID[i] + "&appid=" + APPID + "&units=" + UNITSID;
-    let apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID[i] + "&appid=" + APPID + "&units=" + UNITSID;
-
-    console.log(apiURL);
-
-    fetch(apiURL)
-        .then((response) => response.json())
-        .then((jsObject) => {
-            console.log(jsObject);
-
-            let description = jsObject.weather[0].description;
-            let currentTemp = parseFloat(jsObject.main.temp);
-            let humidity = parseFloat(jsObject.main.humidity);
-            let windSpeed = parseFloat(jsObject.wind.speed);
-
-            document.querySelector("#" + cityName[i] + "-weather-currently").innerText = description;
-            document.querySelector("#" + cityName[i] + "-weather-temp").innerText = currentTemp.toFixed(2);
-            document.querySelector("#" + cityName[i] + "-weather-humidity").innerText = humidity.toFixed(0);
-            document.querySelector("#" + cityName[i] + "-weather-windspeed").innerText = windSpeed.toFixed(2);
-
-            let chill = windChill(currentTemp, windSpeed);
-
-            if (chill) {
-                chillText = chill.toFixed(2) + " F";
-            }
-            else {
-                chillText = "N/A";
-            }
-
-            document.querySelector("#" + cityName[i] + "-weather-windchill").innerText = chillText;
-        });
-
-    fetch(apiForecastURL)
-        .then((response) => response.json())
-        .then((jsObject) => {
-            console.log(jsObject);
-
-            let forecasts = jsObject.list;
-            let temperatures = []
-            let icons = []
-
-            for (let forecast of forecasts) {
-                if (forecast.dt_txt.includes("18:00:00")) {
-                    let imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
-                    icons.push(imagesrc);
-                    temperatures.push(forecast.main.temp);
+for (let i = 0; i < cityName.length; i++) {
+    if (document.querySelector('#' + cityName[i] + '-weather-currently') != null) {
+        
+        let apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityID[i] + "&appid=" + APPID + "&units=" + UNITSID;
+        let apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityID[i] + "&appid=" + APPID + "&units=" + UNITSID;
+        
+        //console.log(apiURL);
+        
+        fetch(apiURL)
+            .then((response) => response.json())
+            .then((jsObject) => {
+                //console.log(jsObject);
+        
+                let description = jsObject.weather[0].description;
+                let currentTemp = parseFloat(jsObject.main.temp);
+                let humidity = parseFloat(jsObject.main.humidity);
+                let windSpeed = parseFloat(jsObject.wind.speed);
+        
+                document.querySelector("#" + cityName[i] + "-weather-currently").innerText = description;
+                document.querySelector("#" + cityName[i] + "-weather-temp").innerText = currentTemp.toFixed(2);
+                document.querySelector("#" + cityName[i] + "-weather-humidity").innerText = humidity.toFixed(0);
+                document.querySelector("#" + cityName[i] + "-weather-windspeed").innerText = windSpeed.toFixed(2);
+        
+                let chill = windChill(currentTemp, windSpeed);
+        
+                if (chill) {
+                    chillText = chill.toFixed(2) + " F";
                 }
+                else {
+                    chillText = "N/A";
+                }
+        
+                document.querySelector("#" + cityName[i] + "-weather-windchill").innerText = chillText;
+            });
+        
+        fetch(apiForecastURL)
+            .then((response) => response.json())
+            .then((jsObject) => {
+                //console.log(jsObject);
+        
+                let forecasts = jsObject.list;
+                let temperatures = []
+                let icons = []
+        
+                for (let forecast of forecasts) {
+                    if (forecast.dt_txt.includes("18:00:00")) {
+                        let imagesrc = 'https://openweathermap.org/img/w/' + forecast.weather[0].icon + '.png';
+                        icons.push(imagesrc);
+                        temperatures.push(forecast.main.temp);
+                    }
+                }
+        
+                document.querySelector("." + cityName[i] + "-forecast-day1").innerText = temperatures[0] + " F";
+                document.querySelector("." + cityName[i] + "-forecast-day2").innerText = temperatures[1] + " F";
+                document.querySelector("." + cityName[i] + "-forecast-day3").innerText = temperatures[2] + " F";
+                document.querySelector("." + cityName[i] + "-forecast-day4").innerText = temperatures[3] + " F";
+                document.querySelector("." + cityName[i] + "-forecast-day5").innerText = temperatures[4] + " F";
+        
+                document.querySelector("." + cityName[i] + "-icon-day1").setAttribute('src', icons[0]);
+                document.querySelector("." + cityName[i] + "-icon-day2").setAttribute('src', icons[1]);
+                document.querySelector("." + cityName[i] + "-icon-day3").setAttribute('src', icons[2]);
+                document.querySelector("." + cityName[i] + "-icon-day4").setAttribute('src', icons[3]);
+                document.querySelector("." + cityName[i] + "-icon-day5").setAttribute('src', icons[4]);
+        
             }
-
-            document.querySelector("." + cityName[i] + "-forecast-day1").innerText = temperatures[0] + " F";
-            document.querySelector("." + cityName[i] + "-forecast-day2").innerText = temperatures[1] + " F";
-            document.querySelector("." + cityName[i] + "-forecast-day3").innerText = temperatures[2] + " F";
-            document.querySelector("." + cityName[i] + "-forecast-day4").innerText = temperatures[3] + " F";
-            document.querySelector("." + cityName[i] + "-forecast-day5").innerText = temperatures[4] + " F";
-
-            document.querySelector("." + cityName[i] + "-icon-day1").setAttribute('src', icons[0]);
-            document.querySelector("." + cityName[i] + "-icon-day2").setAttribute('src', icons[1]);
-            document.querySelector("." + cityName[i] + "-icon-day3").setAttribute('src', icons[2]);
-            document.querySelector("." + cityName[i] + "-icon-day4").setAttribute('src', icons[3]);
-            document.querySelector("." + cityName[i] + "-icon-day5").setAttribute('src', icons[4]);
-
-        }
-    );
+        );
+    }
 }
