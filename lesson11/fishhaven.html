@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fish Haven - Bakersfield Weather</title>
+    <meta
+      name="description"
+      content="Weather Site Project - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/banner.js"></script>
+    <script defer src="js/weather.js"></script>
+  </head>
+  <body>
+    <aside id="banner">
+      🥞 Preston Pancakes in the Park! 9:00am Saturday at the city park. 🥞
+    </aside>
+    <header>
+      <picture>
+        <a href="index.html"><img src="images/windsock.png" alt="Wind Sock Logo" /></a>
+      </picture>
+      <section class="headings">
+        <h1>Bakersfield Weather</h1>
+        <div class="motto">
+          For when it's hot<br />
+          and when it's not
+        </div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu ≡</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven</h2>
+      <section class="hero">
+        <img  srcset="images/wdd230_image_franklinOriginal580.jpg 580w,
+                      images/wdd230_image_franklinOriginal660.jpg 660w,
+                      images/wdd230_image_franklinOriginal750.jpg 750w"
+              sizes=" (max-width: 599px) 580px,
+                      (max-width: 959px) 660px,
+                      750px"
+              src="images/wdd230_image_franklinOriginal750.jpg" alt="Town near water" />
+        <div class="weather-summary">
+          <h3 class="weather-summary-heading">Weather Summary</h3>
+          <div class="category-weather">Description:</div>
+          <div class="value-weather"><span id="fishhaven-weather-currently"></span></div>
+          <div class="category-high">Current:</div>
+          <div class="value-high"><span id="fishhaven-weather-temp"></span> F</div>
+          <div class="category-windchill">Wind Chill:</div>
+          <div class="value-windchill"><span id="fishhaven-weather-windchill"></span></div>
+          <div class="category-humidity">Humidity:</div>
+          <div class="value-humidity"><span id="fishhaven-weather-humidity"></span>%</div>
+          <div class="category-windspeed">Wind Speed:</div>
+          <div class="value-windspeed"><span id="fishhaven-weather-windspeed"></span> mph</div>
+        </div>
+        <br />Photo by Adrien Olichon from Pexels
+      </section>
+      <section class="forecast">
+        <ul>
+          <li>
+            <div class="forecast-header">Tomorrow</div>
+            <img src="" alt="" class="fishhaven-icon-day1"><br /><span class="fishhaven-forecast-day1">89 F</span>
+          </li>
+          <li>
+            <div class="forecast-header">2 Days</div>
+            <img src="" alt="" class="fishhaven-icon-day2"><br /><span class="fishhaven-forecast-day2">89 F</span>
+          </li>
+          <li>
+            <div class="forecast-header">3 Days</div>
+            <img src="" alt="" class="fishhaven-icon-day3"><br /><span class="fishhaven-forecast-day3">89 F</span>
+          </li>
+          <li>
+            <div class="forecast-header">4 Days</div>
+            <img src="" alt="" class="fishhaven-icon-day4"><br /><span class="fishhaven-forecast-day4">89 F</span>
+          </li>
+          <li>
+            <div class="forecast-header">5 Days</div>
+            <img src="" alt="" class="fishhaven-icon-day5"><br /><span class="fishhaven-forecast-day5">89 F</span>
+          </li>
+        </ul>
+      </section>
+      <article class="container">
+        <h3>Founders Day Fresco</h3>
+        <p>by Jennifer Gonzalez</p>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore
+          officiis et explicabo perspiciatis voluptates, cupiditate eum ab, ipsa
+          itaque ullam animi laboriosam neque maxime recusandae mollitia dolor,
+          nemo nihil!
+        </p>
+      </article>
+      <section class="contact">
+        <img class="contact-map" src="images/prestonmap.png" alt="Map of Preston" />
+        <ul>
+          <li>BakeWeather</li>
+          <li>30 N 1st E</li>
+          <li>Preston, ID 83263<br /><br /></li>
+          <li>📞999-999-9999</li>
+          <li>📬bakeweather@bakersfield.com<br /><br /></li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                src="images/facebook.png"
+                alt="Facebook icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="images/instagram.png"
+                alt="Instagram icon"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img
+                src="images/twitter.png"
+                alt="Twitter icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeWeather | Gary Wilkins | California
+      |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+      <p>Weather data provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Lato','Sriracha']
+        }
+      });
+    </script>
+  </body>
+</html>

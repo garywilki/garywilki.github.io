@@ -1,0 +1,90 @@
+@media only screen and (min-width: 37.5em) {
+    main, footer {
+        max-width: 900px;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+    }
+
+    section {
+        margin: 0px;
+    }
+
+    footer {
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 2.0rem; /* 32px */
+    }
+
+    .motto {
+        font-size: 1.4rem; /* 22px */
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .contact-map {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+    }
+
+    .contact ul {
+        grid-column: 2 / 3;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .towncards section {
+        background-color: lavenderblush;
+        color: blue;
+        padding: 10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .towncards section:nth-child(even) img {
+        grid-column: 1;
+    }
+
+    .towncards section:nth-child(even) article {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .towncards section h2 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .towncards img {
+        max-width: 100%;
+    }
+    
+    .towncardmotto {
+        font-style:italic;
+        font-weight:bold;
+        margin: 0;
+        color: green;
+        font-size: 1rem;
+    }
+}
