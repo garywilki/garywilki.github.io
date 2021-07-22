@@ -286,3 +286,23 @@ main h2 {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+.gridbutton, .listbutton {
+  display:none;
+}
+
+.gridbutton {
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  background: url(../images/gridicon.png);
+  float: right;
+}
+
+.listbutton {
+  height: 40px;
+  width: 40px;
+  border: 0px;
+  background: url(../images/listicon.png);
+  float: right;
+}

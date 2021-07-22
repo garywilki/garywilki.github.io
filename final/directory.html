@@ -20,12 +20,13 @@
     <script defer src="js/index.js"></script>
     <script defer src="js/weather.js"></script>
     <script defer src="js/jsonProcessing.js"></script>
+    <script defer src="js/directory.js"></script>
   </head>
   <body>
     <header>
       <a href="index.html">
         <picture>
-          <img src="images/windsock.png" alt="Wind Sock Logo" />
+          <img src="images/bold.png" alt="Bakersfield B" />
         </picture>
       </a>
       <section class="headings">
@@ -44,6 +45,8 @@
       </ul>
     </nav>
     <main>
+      <button class="gridbutton" type="button" onclick="gridview()"></button>
+      <button class="listbutton" type="button" onclick="listview()"></button>
       <h2>Business Directory</h2>
       <section class="directory companycards"></section>
       <section class="contact">
@@ -71,7 +74,7 @@
     <footer>
       &copy; <span id="theyear"></span> BakeChamber | Gary Wilkins | California
       |
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="attributions.html">Attributions</a>
       <p>Last Updated: <span id="lastmodified"></span></p>
       <p>
         Weather data provided by

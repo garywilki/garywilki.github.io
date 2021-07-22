@@ -1,4 +1,4 @@
-@media only screen and (min-width: 39em) {
+@media only screen and (min-width: 39rem) {
     main, footer {
         max-width: 1000px;
     }
@@ -72,5 +72,9 @@
     .contact-grid img {
         max-width: 100%;
         display: block;
+    }
+
+    .gridbutton, .listbutton {
+        display:none;
     }
 }
