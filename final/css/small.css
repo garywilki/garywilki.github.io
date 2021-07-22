@@ -1,0 +1,288 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #ccd;
+  font-family: Lato, arial, sans-serif;
+  background-image: url("../images/california-background50.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem; /* 28px */
+}
+
+h2 {
+  font-size: 2rem; /* 24px */
+  background-color: #70ad47;
+  border-radius: 100%;
+  color: white;
+  padding: 20px;
+  max-width: 50%;
+  margin: 20px auto 10px;
+}
+
+p {
+  font-size: 1.2rem; /* 19px */
+}
+
+header,
+main,
+footer,
+nav {
+  margin: 0 auto;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1.5rem 4rem;
+  background-color: #8eaadb;
+  color: #fff;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+header a {
+  justify-self: end;
+}
+
+header h1 {
+  font-size: 1.8rem; /* 40px */
+  font-family: "Sriracha", cursive;
+  margin: 0px 0px 20px 20px;
+}
+
+header img {
+  width: 60px;
+}
+
+.motto {
+  font-size: 1.2rem; /* 19px */
+}
+
+nav {
+  background-color: #36454f;
+  box-shadow: 0 2px 15px gray;
+  max-width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+.navigation a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.2rem; /* 20px */
+}
+
+.navigation a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+.navigation .active {
+  color: yellow;
+}
+
+footer,
+footer p {
+  font-size: 1em;
+}
+
+footer a {
+  color: yellow;
+}
+
+main {
+  background-color: #ddd;
+  padding: 1em 0em;
+  /*display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;*/
+}
+
+main h2 {
+  text-align: center;
+}
+
+.container {
+  border-radius: 20px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #bdb;
+  width: 90%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items:start;
+  margin: auto;
+}
+  
+.hero img {
+  width: 100%;
+  grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+  grid-row: 1;
+  margin: auto;
+}
+
+.action {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(255, 255, 255, 0.78);
+  margin: 3em 15%;
+  padding: 1em;
+  text-align: center;
+  width: 200px;
+}
+
+.action button {
+  line-height: 1em;
+  width: 10em;
+  background-color: #88b8e7;
+  font-size: 1.2em;
+  padding: .3rem;
+}
+
+.contact {
+  background: rgb(195, 195, 255);
+  padding: 20px;
+  height: auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  grid-gap: 10px;
+}
+
+.contact ul {
+  margin: auto;
+  border: 1px solid;
+  list-style-type: none;
+  max-width: 100%;
+  padding: 20px;
+  grid-column: 1 / -1;
+}
+
+.contact iframe {
+  display: none;
+}
+
+.companycards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+
+.companycards section {
+  background-color: #bdb;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  border: 13px solid green;
+  border-radius: 30px;
+}
+
+.companycards section h3 {
+  margin: 0;
+  font-family: Sriracha;
+  font-size: 2.5rem;
+  padding: 0;
+  color: blue;
+}
+
+.companycards img {
+  max-width: 100%;
+}
+
+.companycardsdescription {
+  font-style:italic;
+  font-weight:bold;
+  margin: 0;
+  color: navy;
+  font-size: 1rem;
+}
+
+.upcomingevents {
+  display: block;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 50px auto;
+  max-width: 100%;
+}
+
+.upcomingevents article {
+  background-color: #dfd;
+  color: blue;
+  padding: 10px;
+  border: 13px solid #aaa;
+  border-radius: 30px;
+}
+
+.upcomingevents article h3 {
+  margin: 0;
+  text-align: center;
+  font-family: Sriracha;
+  font-size: 2.5rem;
+  padding: 0;
+}
+
+.weather-summary {
+  font-size: 1.5rem;
+  background: radial-gradient(#eee, #4567aa);
+  padding: 1.5rem;
+  box-shadow: 0 0 30px #111;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 10px;
+  max-width: 300px;
+  margin: 50px auto;
+}
+
+.weather-summary-heading {
+  font-size: 2.2rem;
+  grid-column: 1 / -1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.contact-grid img {
+  display: none;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}

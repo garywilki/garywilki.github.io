@@ -1,0 +1,115 @@
+{
+    "demographics": {
+        "motto": "Life as it should be.",
+        "yearFounded": 1858,
+        "currentPopulation": 383512,
+        "averagehigh": 76.8,
+        "averagelow": 53.1,
+        "averageRainfall": 6.49,
+        "medianage": 30.2
+    },
+    "boardOfDirectors": [
+        {
+            "name": "Heidi Brundage",
+            "email": "hbrundage@bakechamber.com"
+        },
+        {
+            "name": "Steve Ho",
+            "email": "sho@bakechamber.com"
+        },
+        {
+            "name": "Brenda Anderson",
+            "email": "banderson@bakechamber.com"
+        },
+        {
+            "name": "Alexi Jacobson",
+            "email": "ajacobson@bakechamber.com"
+        },
+        {
+            "name": "Janna Lemuelson",
+            "email": "jlemuelson@bakechamber.com"
+        }
+    ],
+    "events": [
+        {
+            "name": "The World Famous Buckaroos",
+            "date": "July 23, 2021",
+            "website": "https://www.visitbakersfield.com/events-calendar/the-world-famous-buckaroos/"
+        },
+        {
+            "name": "Haggin Oaks Farmers Market",
+            "date": "August 01, 2021",
+            "website": "https://www.visitbakersfield.com/events-calendar/haggin-oaks-farmers-market/"
+        },
+        {
+            "name": "2021 Winter Exhibitions Digital Presentation",
+            "date": "August 11, 2021",
+            "website": "https://www.visitbakersfield.com/events-calendar/2021-winter-exhibitions-digital-presentation/"
+        }
+    ],
+    "companies": [
+        {
+            "businessName": "Cricklewood",
+            "businessAddress": "2816 Brundage Ln, Bakersfield, CA 93304",
+            "businessPhone": "(661) 325-9928",
+            "businessEmail": "",
+            "businessWebsite": "cricklewoodsecretgarden.com",
+            "businessDescription": "Welcome to the Secret Garden...",
+            "logo": "images/logos/cricklewood.jpg"
+        },
+        {
+            "businessName": "Baked Bake Shop",
+            "businessAddress": "3401 Pacheco Rd Ste K Bakersfield, CA 93313",
+            "businessPhone": "(661) 885-9898",
+            "businessEmail": "requestbaked@gmail.com",
+            "businessWebsite": "bakedbakeshop.net",
+            "businessDescription": "",
+            "logo": "images/logos/baked.jpg"
+        },
+        {
+            "businessName": "Max Muscle Nutrition",
+            "businessAddress": "2660 Oswell St Ste 103 Bakersfield, CA 93306",
+            "businessPhone": "(661) 871-1500",
+            "businessEmail": "",
+            "businessWebsite": "maxmuscle.com",
+            "businessDescription": "Cleanse & Tone Your Body",
+            "logo": "images/logos/maxmuscle.jpg"
+        },
+        {
+            "businessName": "Salad Sensations",
+            "businessAddress": "2681 Calloway Dr Ste 306 Bakersfield, CA 93312",
+            "businessPhone": "(661) 679-4447",
+            "businessEmail": "sdsensation18@icloud.com",
+            "businessWebsite": "saladsensations.net",
+            "businessDescription": "Eat good, live good",
+            "logo": "images/logos/saladsensations.jpg"
+        },
+        {
+            "businessName": "Hills Window Tinting",
+            "businessAddress": "1130 S Union Ave Bakersfield, CA 93307",
+            "businessPhone": "(661) 345-0736",
+            "businessEmail": "",
+            "businessWebsite": "hillstint.webs.com",
+            "businessDescription": "",
+            "logo": "images/logos/hillswindowtinting.jpg"
+        },
+        {
+            "businessName": "Bonnie's Best Cafe",
+            "businessAddress": "1900 21st St Bakersfield, CA 93301",
+            "businessPhone": "(661) 323-7224",
+            "businessEmail": "",
+            "businessWebsite": "bonniesbestcafe.com",
+            "businessDescription": "Welcome to Bonnie's Best Cafe",
+            "logo": "images/logos/bonniesbest.jpg"
+        },
+        {
+            "businessName": "Tyack Tires",
+            "businessAddress": "211 Sumner St Bakersfield, CA 93305",
+            "businessPhone": "(661) 324-9747",
+            "businessEmail": "",
+            "businessWebsite": "tyacktires.com",
+            "businessDescription": "The People Who Know Tires Best!",
+            "logo": "images/logos/tyacktires.jpg"
+        }
+    ]
+}

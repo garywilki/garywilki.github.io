@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks For Contacting Us - Bakersfield Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Thanks For Contacting Us - Bakersfield Chamber of Commerce - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/jsonProcessing.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <picture>
+          <img src="images/windsock.png" alt="Wind Sock Logo" />
+        </picture>
+      </a>
+      <section class="headings">
+        <h1>Bakersfield Chamber of Commerce</h1>
+        <div class="motto">For all your hot stops</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu ≡</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bakersfield.html">Bakersfield</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Thanks!</h2>
+      <p class="container">
+        Thanks for reaching out to us! One of our representatives will be in
+        contact with you within 3-5 business days.
+      </p>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeChamber | Gary Wilkins | California
+      |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+      <p>
+        Weather data provided by
+        <a href="https://openweathermap.org/">OpenWeatherMap</a>
+      </p>
+      <p class="lastvisited"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Sriracha"],
+        },
+      });
+    </script>
+  </body>
+</html>

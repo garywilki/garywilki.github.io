@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us - Bakersfield Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Join Us - Bakersfield Chamber of Commerce - Gary Wilkins - WDD 230: Web Frontend Development"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script defer src="js/index.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/jsonProcessing.js"></script>
+    <script defer src="js/slider.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <picture>
+          <img src="images/windsock.png" alt="Wind Sock Logo" />
+        </picture>
+      </a>
+      <section class="headings">
+        <h1>Bakersfield Chamber of Commerce</h1>
+        <div class="motto">For all your hot stops</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">Menu ≡</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bakersfield.html">Bakersfield</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Join the Bakersfield<br />Chamber of Commerce!</h2>
+      <p class="container">
+        Place your company in the spotlight by becoming a member today! Just
+        fill out the form below and we'll be in contact with you. Please expect
+        a response within 3-5 business days.
+      </p>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Personal</legend>
+          <label class="top"
+            >First Name*
+            <input type="text" name="fname" pattern="[A-Za-z ]{2,}" required
+          /></label>
+          <label class="top"
+            >Last Name*
+            <input type="text" name="lname" pattern="[A-Za-z ]{2,}" required
+          /></label>
+          <label class="top"
+            >Title <input type="text" name="title" pattern="[A-Za-z ]{2,}"
+          /></label>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+          /></label>
+          <label class="top"
+            >Cell Phone <input type="tel" name="phone"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business</legend>
+          <label class="top"
+            >Business Name* <input type="text" name="bname" required
+          /></label>
+          <label class="top"
+            >Business Address <input type="text" name="baddress"
+          /></label>
+          <label class="top"
+            >Business Website <input type="text" name="bwebsite"
+          /></label>
+          <label class="top"
+            >Business Description <input type="text" name="bdescription"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membership Level</legend>
+
+          <p>
+            Membership offers many exciting perks for your company. Drag the
+            slider below to explore your options!
+          </p>
+
+          <label class="flexly" for="rating"
+            >Membership: &nbsp;&nbsp;&nbsp;
+            <input
+              class="jMembershipSlider"
+              type="range"
+              id="rating"
+              value="2"
+              min="1"
+              max="4"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue"></span>
+          </label>
+
+          <p class="jMembershipDescription"></p>
+
+          <datalist id="tickmarks">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+          </datalist>
+        </fieldset>
+
+        <input type="submit" value="Join the Chamber!" class="submitBtn" />
+      </form>
+      <section class="contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.93387261766!2d-119.02593294901475!3d35.38209605382948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ea69ed3bf2f247%3A0xd417c28847466832!2s2501%20F%20St%2C%20Bakersfield%2C%20CA%2093301!5e0!3m2!1sen!2sus!4v1626922064997!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <ul>
+          <li>Bakersfield Chamber of Commerce</li>
+          <li>2501 F Street</li>
+          <li>Bakersfield, CA 93301<br /><br /></li>
+          <li>📞661-876-4001</li>
+          <li>admin@bakechamber.com<br /><br /></li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="images/facebook.png" alt="Facebook icon"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="images/instagram.png" alt="Instagram icon"
+            /></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><img src="images/twitter.png" alt="Twitter icon"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="theyear"></span> BakeChamber | Gary Wilkins | California
+      |
+      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      <p>Last Updated: <span id="lastmodified"></span></p>
+      <p>
+        Weather data provided by
+        <a href="https://openweathermap.org/">OpenWeatherMap</a>
+      </p>
+      <p class="lastvisited"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Lato", "Sriracha"],
+        },
+      });
+    </script>
+  </body>
+</html>

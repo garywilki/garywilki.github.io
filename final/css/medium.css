@@ -1,0 +1,76 @@
+@media only screen and (min-width: 39em) {
+    main, footer {
+        max-width: 1000px;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem; /* 32px */
+    }
+
+    .motto {
+        font-size: 1.4rem; /* 22px */
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact iframe {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
+    .contact ul {
+        grid-column: 2 / 2;
+    }
+
+    .companycards {
+        max-width: 800px;
+    }
+    
+    .companycards section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .companycards section h3 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .companycards img {
+        max-width: 100%;
+        justify-self: end;
+    }
+
+    .upcomingevents {
+        max-width: 800px;
+    }
+
+    .contact-grid img {
+        max-width: 100%;
+        display: block;
+    }
+}

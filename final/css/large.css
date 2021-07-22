@@ -1,0 +1,82 @@
+@media only screen and (min-width: 64em) {
+    header, main, footer, nav {
+        max-width: 1100px;
+    }
+
+    header, footer {
+        border-radius: 50px;
+    }
+
+    .navigation {
+		display: flex;
+        max-width: 1000px;
+        margin: auto;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .container {
+        max-width: 70%;
+    }
+
+    header h1 {
+        font-size: 3rem; /* 40px */
+    }
+
+    .motto {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    .companycards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 95%;
+    }
+    
+    .companycards section {
+        padding: 10px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    
+    .companycards section h2 {
+        margin: 0;
+        font-family: Sriracha;
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    
+    .companycards img {
+        max-width: 100%;
+        justify-self: center;
+    }
+    
+    .companycardsdescription {
+        font-style:italic;
+        font-weight:bold;
+        margin: 0;
+        color: green;
+        font-size: 1rem;
+    }
+
+    .eventsweathergrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
