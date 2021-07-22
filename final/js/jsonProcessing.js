@@ -20,41 +20,7 @@ fetch(requestURL)
                 var r = Math.floor(Math.random() * companies.length);
                 if (randIndexes.indexOf(r) === -1) randIndexes.push(r);
             }
-            // let card = document.createElement('section');
 
-            // let cardArticle = document.createElement('article');
-
-            // let name = document.createElement('h2');
-            // let motto = document.createElement('p');
-            // let founded = document.createElement('p');
-            // let population = document.createElement('p');
-            // let averageRainfall = document.createElement('p');
-            // let photo = document.createElement('img');
-
-            // name.textContent = town.name;
-
-            // motto.textContent = town.motto;
-            // motto.setAttribute('class', "towncardmotto");
-
-            // founded.textContent = "Year Founded: " + town.yearFounded;
-            // population.textContent = "Population: " + town.currentPopulation;
-            // averageRainfall.textContent = "Annual Rain Fall: " + town.averageRainfall;
-
-            // photo.setAttribute('src', "images/" + town.photo);
-            // photo.setAttribute('alt', town.name);
-
-            
-            // cardArticle.appendChild(name);
-            // cardArticle.appendChild(motto);
-            // cardArticle.appendChild(founded);
-            // cardArticle.appendChild(population);
-            // cardArticle.appendChild(averageRainfall);
-
-            // card.appendChild(cardArticle);
-            // card.appendChild(photo);
-            
-
-            // document.querySelector('.towncards').appendChild(card);
             // Display the chosen companies
             for (i of randIndexes) {
                 company = companies[i];
@@ -67,7 +33,7 @@ fetch(requestURL)
                 let businessAddress = document.createElement('p');
                 let businessPhone = document.createElement('p');
                 let businessEmail = document.createElement('p');
-                let businessWebsite = document.createElement('p');
+                let businessWebsite = document.createElement('a');
                 let businessDescription = document.createElement('p');
                 let logo = document.createElement('img');
 
@@ -75,8 +41,11 @@ fetch(requestURL)
                 businessAddress.textContent = company.businessAddress;
                 businessPhone.textContent = company.businessPhone;
                 businessEmail.textContent = company.businessEmail;
-                businessWebsite.textContent = company.businessWebsite;
-                businessDescription.textContent = company.businessDescription;
+
+                businessWebsite.innerHTML = company.businessWebsite + "<br /><br />";
+                businessWebsite.href = "http://" + company.businessWebsite;
+
+                businessDescription.innerHTML = company.businessDescription + "<br />";
                 businessDescription.setAttribute('class', "companycardsdescription");
 
                 logo.setAttribute('src', company.logo);
